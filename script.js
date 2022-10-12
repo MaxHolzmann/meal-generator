@@ -7,6 +7,7 @@ const mealsJSON = fetch() // fetch meals from a JSON file here
 
 const generateButton = document.getElementById('genBtn');
 generateButton.addEventListener('click', (e) => {
+  console.log("Button click!");
     // GENERATE A MEAL AND MANIPULATE THE DOM TO DISPLAY THE MEAL HERE!!!
 })
 
@@ -17,7 +18,7 @@ generateButton.addEventListener('click', (e) => {
 psuedo code: 
 
 
-event listener listening for a click of the "generate" button
+event listener listening for a click of the "generate" button - complete
 
 
 fetch a list of complete meals from a JSON file
