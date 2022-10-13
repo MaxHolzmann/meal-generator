@@ -24,12 +24,11 @@ psuedo code:
 
 event listener listening for a click of the "generate" button - complete
 
+fetch a list of entrees and sides from a JSON file (done!)
 
-fetch a list of complete meals from a JSON file
 
-each object should have an entree & side, not correlated with each other
+grab a random entree and a random side (??? how ??) something with math.floor,
 
-grab a random entree and a random side (??? how ??)
 
 return a randomized meal to the screen through DOM maniuplation 
 
