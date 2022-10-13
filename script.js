@@ -1,8 +1,3 @@
-//an example fetch 
-fetch('https://api.chucknorris.io/jokes/random?category=dev')
-  .then(res => res.json()) // the .json() method parses the JSON response into a JS object literal
-  .then(data => console.log(data));
-
 
 // fetch meals from a JSON file here
 
@@ -11,8 +6,12 @@ generateButton.addEventListener('click', (e) => {
   console.log("Button click!");
   const mealsJSON = fetch("https://maxholzmann.github.io/meal-generator/meals.json")
   .then(res=> res.json()) 
-  .then(data => console.log(data))
-    // GENERATE A MEAL AND MANIPULATE THE DOM TO DISPLAY THE MEAL HERE!!!
+  .then(data => {
+    const foodName = data.entrees[0].name;
+    const foodType = data.entrees[0].type;
+    console.log(foodName + " is the name of the food");
+    console.log(foodType + " is the type of food!");
+  });    // GENERATE A MEAL AND MANIPULATE THE DOM TO DISPLAY THE MEAL HERE!!!
 })
 
 
