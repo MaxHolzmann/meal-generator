@@ -1,3 +1,5 @@
+const mealText = document.getElementById('meal')
+
 
 // fetch meals from a JSON file here
 const randomNum = (max) => {
@@ -19,6 +21,8 @@ generateButton.addEventListener('click', (e) => {
 
     const foodName = data.entrees[mealNumber].name;
     const foodType = data.entrees[mealNumber].type;
+
+    mealText.textContent = foodName
     console.log(foodName + " is the name of the food");
     console.log(foodType + " is the type of food!");
   });    // GENERATE A MEAL AND MANIPULATE THE DOM TO DISPLAY THE MEAL HERE!!!
@@ -37,6 +41,8 @@ use JS to update the dom to the meal, instead of logging to console
 add Sides
 
 add random side button
+
+add meal, or mix and match buttons. 
 
 add more meals
 

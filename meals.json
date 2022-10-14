@@ -7,5 +7,12 @@
         "name": "food 2",
         "type": "food 2 type"
     }
+    ],
+    "sides": [
+        {
+        "name": "side 1"
+        }, {
+        "name": "side 2"   
+        }
     ]
 }
