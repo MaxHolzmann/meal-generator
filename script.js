@@ -24,6 +24,17 @@ generateButton.addEventListener('click', (e) => {
     const foodName = data.entrees[mealNumber].name;
     const sideName = data.sides[sideNumber].name;
 
+    const mealAnimation = [
+  { transform: 'scale(1.2)' },
+  { transform: 'scale(1)' }
+];
+
+const newspaperTiming = {
+  duration: 200,
+  iterations: 1,
+}
+    mealText.animate(mealAnimation, newspaperTiming);
+
     mealText.textContent = "You are having " + foodName + " with a side of " + sideName;
   });   
 })
