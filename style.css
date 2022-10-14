@@ -1,11 +1,18 @@
 /* FONT IMPORTS */
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Gudea");
+@import url("https://fonts.googleapis.com/css?family=Viga");
+@import url("https://fonts.googleapis.com/css?family=Rambla");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 
 body {
 display: flex;
 flex-direction: column;
 align-items: center;
+}
+
+.header-text {
+    font-family: Viga;
 }
 
 .main-section {
@@ -16,18 +23,26 @@ align-items: center;
     width: 100%;
 }
 
-.gen-meal-title {
-    font-family: Roboto;
-}
 .generate-btn {
     color: white;
-    padding: 5px;
+    margin: 10px;
+    font-family: Rambla;
+    padding: 10px;
     font-size: 32px;
-    background-color: blue;
+    background: #00d2ff;
     border: none;
-    border-radius: 30px;
+    border-radius: 40px;
+    transition: 0.2s ease-in-out;
 }
 
 .generate-btn:hover{
-    box-shadow: 0px 0px 5px black;
+    color: #00d2ff;
+    background: #fff;
+    border: 1px solid #00d2ff;
+    cursor: pointer;
+}
+
+#meal { 
+    font-size: 32px;
+    font-family: Gudea;
 }

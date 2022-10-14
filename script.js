@@ -1,4 +1,5 @@
-const mealText = document.getElementById('meal')
+const mealText = document.getElementById('meal');
+const sideText = document.getElementById('side'); // not in use, plan to use to generate just sides
 
 
 // fetch meals from a JSON file here
@@ -11,22 +12,22 @@ const randomNum = (max) => {
 const generateButton = document.getElementById('genBtn');
 generateButton.addEventListener('click', (e) => {
   console.log("Button click!");
-  const mealsJSON = fetch("https://maxholzmann.github.io/meal-generator/meals.json")
+  const mealsJSON = fetch("meals.json")
   .then(res=> res.json()) 
   .then(data => {
 
-    let mealNumber = randomNum(data.entrees.length)
+    let mealNumber = randomNum(data.entrees.length);
+    let sideNumber = randomNum(data.sides.length);
 
     console.log(mealNumber)
 
     const foodName = data.entrees[mealNumber].name;
-    const foodType = data.entrees[mealNumber].type;
+    const sideName = data.sides[sideNumber].name;
 
-    mealText.textContent = foodName
-    console.log(foodName + " is the name of the food");
-    console.log(foodType + " is the type of food!");
-  });    // GENERATE A MEAL AND MANIPULATE THE DOM TO DISPLAY THE MEAL HERE!!!
+    mealText.textContent = "You are having " + foodName + " with a side of " + sideName;
+  });   
 })
+
 /*
 
 TO-DO PSEUDO CODE: 
