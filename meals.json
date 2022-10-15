@@ -1,30 +1,46 @@
 {
     "entrees": [
         {
-        "name": "food 1",
+        "name": "Tacos",
         "type": "food 1 type"
     }, {
-        "name": "food 2",
+        "name": "Burgers",
         "type": "food 2 type"
     }, {
-        "name": "food 3"
+        "name": "Lasagna"
     }, {
-        "name": "food 4"
+        "name": "Chicken Tenders"
     }, {
-        "name": "food 5"
+        "name": "Spaghetti"
+    }, {
+        "name": "Mac & Cheese"
+    }, {
+        "name": "Corn Dogs"
+    }, {
+        "name": "Pizza"
+    }, {
+        "name": "Grilled Cheese Sandwich"
+    }, {
+        "name": "Loaded Nachos"
+    }, {
+        "name": "Chicken Breast"
+    }, {
+        "name": "Salad"
+    }, {
+        "name": "Grilled Fish"
     }
     ],
     "sides": [
         {
-        "name": "side 1"
+        "name": "Garlic Bread"
         }, {
-        "name": "side 2"   
+        "name": "French Fries"   
         }, {
-        "name": "side 3"
+        "name": "Cheese Curds"
         }, {
-        "name": "side 4"
+        "name": "Frozen Fruit"
         }, {
-        "name": "side 5"
+        "name": "Dannon Light and Fit Greek Yogurt"
         }
     ]
 }
