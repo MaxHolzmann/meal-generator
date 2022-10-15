@@ -10,8 +10,20 @@ align-items: center;
 background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .header-text {
     font-family: Viga;
+    color: white;
+}
+
+#header-img{
+    font-size: 32px;
     color: white;
 }
 
@@ -21,7 +33,7 @@ background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
     flex-wrap: wrap;
     align-items: center;
     width: fit-content;
-    max-width: 40%;
+    max-width: 30%;
     border-radius: 20px;
     padding: 10px;
 }
