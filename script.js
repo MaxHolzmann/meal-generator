@@ -1,6 +1,6 @@
 const mealText = document.getElementById('meal');
 const sideText = document.getElementById('side'); // not in use, plan to use to generate just sides
-
+const mainSection = document.getElementById('main-section');
 
 // fetch meals from a JSON file here
 const randomNum = (max) => {
@@ -24,13 +24,15 @@ generateButton.addEventListener('click', (e) => {
     const foodName = data.entrees[mealNumber].name;
     const sideName = data.sides[sideNumber].name;
 
+    mainSection.style.backgroundColor = "white";
+
     const mealAnimation = [
   { transform: 'scale(1.2)' },
   { transform: 'scale(1)' }
 ];
 
 const newspaperTiming = {
-  duration: 200,
+  duration: 300,
   iterations: 1,
 }
     mealText.animate(mealAnimation, newspaperTiming);
