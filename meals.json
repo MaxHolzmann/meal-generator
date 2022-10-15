@@ -2,45 +2,61 @@
     "entrees": [
         {
         "name": "Tacos",
-        "type": "food 1 type"
+        "color": "red"
     }, {
         "name": "Burgers",
-        "type": "food 2 type"
+        "color": "red"
     }, {
-        "name": "Lasagna"
+        "name": "Lasagna",
+        "color": "red"
     }, {
-        "name": "Chicken Tenders"
+        "name": "Chicken Tenders",
+        "color": "red"
     }, {
-        "name": "Spaghetti"
+        "name": "Spaghetti",
+        "color": "red"
     }, {
-        "name": "Mac & Cheese"
+        "name": "Mac & Cheese",
+        "color": "red"
     }, {
-        "name": "Corn Dogs"
+        "name": "Corn Dogs",
+        "color": "red"
     }, {
-        "name": "Pizza"
+        "name": "Pizza",
+        "color": "red"
     }, {
-        "name": "Grilled Cheese Sandwich"
+        "name": "Grilled Cheese Sandwich",
+        "color": "red"
     }, {
-        "name": "Loaded Nachos"
+        "name": "Loaded Nachos",
+        "color": "red"
     }, {
-        "name": "Chicken Breast"
+        "name": "Chicken Breast",
+        "color": "red"
     }, {
-        "name": "Salad"
+        "name": "Salad",
+        "color": "red"
     }, {
-        "name": "Grilled Fish"
+        "name": "Grilled Fish",
+        "color": "red"
     }
     ],
     "sides": [
         {
-        "name": "Garlic Bread"
+        "name": "Garlic Bread",
+        "color": "red"
         }, {
-        "name": "French Fries"   
+        "name": "French Fries",
+        "color": "red"   
         }, {
-        "name": "Cheese Curds"
+        "name": "Cheese Curds",
+        "color": "red"
         }, {
-        "name": "Frozen Fruit"
+        "name": "Frozen Fruit",
+        "color": "red"
         }, {
-        "name": "Dannon Light and Fit Greek Yogurt"
+        "name": "Dannon Light and Fit Greek Yogurt",
+        "color": "red"
         }
     ]
 }

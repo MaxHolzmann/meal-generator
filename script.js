@@ -1,6 +1,9 @@
 const mealText = document.getElementById('meal');
-const sideText = document.getElementById('side'); // not in use, plan to use to generate just sides
+const entreeText = document.getElementById('entree');
+const sideText = document.getElementById('side');
 const mainSection = document.getElementById('main-section');
+const mealTextFull = document.getElementById('meal-text-full');
+const sideOfText = document.getElementById('side-of-text');
 
 const mealAnimation = [
   { transform: 'scale(1.1)' },
@@ -31,6 +34,8 @@ generateButton.addEventListener('click', (e) => {
 
     const foodName = data.entrees[mealNumber].name;
     const sideName = data.sides[sideNumber].name;
+    const entreeColor = data.entrees[mealNumber].color;
+    const sideColor = data.sides[sideNumber].color;
 
     if(mainSection.style.backgroundColor == "white") {
       console.log('its already white!');
@@ -39,10 +44,21 @@ generateButton.addEventListener('click', (e) => {
       mainSection.animate(mealAnimation, animationTiming);
     }
 
-    mealText.animate(mealAnimation, animationTiming);
-    mealText.textContent = "You are having " + foodName + " with a side of " + sideName;
+    mealTextFull.animate(mealAnimation, animationTiming);
+
+    
+    entreeText.style.color = entreeColor;
+    sideText.style.color = sideColor;
+
+    mealText.textContent = "You are having ";
+    entreeText.textContent = foodName + " ";
+    sideOfText.textContent = " with a side of";
+    sideText.textContent = sideName;
   });   
 })
+
+
+// add a color to each food object, use said color for the text on the page!
 
 /*
 
