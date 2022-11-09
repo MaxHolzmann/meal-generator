@@ -57,6 +57,9 @@
         }, {
         "name": "Dannon Light and Fit Greek Yogurt",
         "color": "red"
+        },  {
+        "name": "Tater Tots",
+        "color": "orange"
         }
     ]
 }
